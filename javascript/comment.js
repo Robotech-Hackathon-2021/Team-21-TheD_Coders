@@ -26,6 +26,11 @@ class item {
 
     var cimg = document.createElement('div');
     cimg.classList.add('cimg');
+
+    var remove = document.createElement('button');
+    remove.classList.add('remove');
+    remove.innerHTML = "&#x2715;";
+    remove.addEventListener('click', () => this.remove(itemBox, name));
     // var limg = document.createElement('div');
     // limg.classList.add('limg');
     var icon = document.createElement('div');
@@ -41,10 +46,18 @@ class item {
 
     container.appendChild(itemBox);
     itemBox.appendChild(input1);
+    // itemBox.appendChild(remove);
     input1.appendChild(cimg);
     cimg.appendChild(icon);
     input1.appendChild(input);
   }
+//   remove(itemBox, name) {
+//     itemBox.parentNode.removeChild(itemBox);
+//     let index = todos.indexOf(name);
+//     todos.splice(index, 1);
+//     window.localStorage.setItem("todos", JSON.stringify(todos));
+
+// }
 }
 add.addEventListener('click', check);
 function check() {
@@ -56,6 +69,6 @@ function check() {
   }
 }
 
-// for (var v = 0; v < todos.length; v++) {
-//     new item(todos[v]);
-// }
+for (var v = 0; v < todos.length; v++) {
+    new item(todos[v]);
+}

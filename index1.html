@@ -21,7 +21,7 @@
                 <ul>
                     <li><a href="">About us</a></li>
                     <li><a href="./files/course1.html">Courses</a></li>
-                    <li><a href="./files/requests.html">Requests</a></li>
+                    <li><a href="./files/help.html">Requests</a></li>
                     <li><a href="./files/Build.html">Build Connections</a></li>
                     <div class="login">
                         <button class="login1" id="myBtn"><a href="./index.html" style="text-decoration: none; color: black;">log out</a></button>
@@ -45,7 +45,7 @@
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="./files/course1.html">Courses</a></li>
-                    <li><a href="./files/requests.html">Requests</a></li>
+                    <li><a href="./files/help.html">Requests</a></li>
                     <li><a href="./files/Build.html">Build Connections</a></li>
                     <div class="login1">
                         <button class="login1" id="myBtn1"><a href="./index.html" style="text-decoration: none; color: black;">log out</a></button>
@@ -304,12 +304,12 @@
         onkeydown="if(event.keyCode == 13) {talk()}">
 
 
-        <form class="medForm" id="medForm">
-            <input class="input" type="text" placeholder="Enter Your name" id="">
-            <input class="input" type="Email" placeholder="Enter Your Email" id="">
-            <input class="input" type="tel" placeholder="Enter Your Contact No." id="">
-            <textarea class="input" name="" id="" placeholder="Share your concern With us" ></textarea>
-            <button> Submit</button>
+        <form name="chatbot" class="medForm" id="medForm" method="POST" data-netlify="true">
+            <input class="input" name="name" type="text" placeholder="Enter Your name" id="name" required>
+            <input class="input" name="email" type="Email" placeholder="Enter Your Email" id="email" required>
+            <input class="input" name="mobile" type="tel" placeholder="Enter Your Contact No." id="mobile" required>
+            <textarea class="input"  name="textmssg" id="req" placeholder="Share your concern With us" required></textarea>
+            <button type="submit"> Submit</button>
 
 
         </form>

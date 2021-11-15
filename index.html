@@ -255,7 +255,7 @@
     <div id="myModal2" class="modal">
         <div class="modal-content">
             <span class="close2">&times;</span>
-            <div class="form">
+            <div class="form" >
                 <form onsubmit="return validate1()" action="index1.html">
                     <div class="feild">
                         <label for="uname1">Enter Your Username</label>
@@ -281,7 +281,7 @@
         <div class="modal-content">
             <span class="close1">&times;</span>
             <div class="form">
-                <form action="">
+                <form action="" >
                     <div class="feild">
                         <label for="uname2">Enter Your Name</label>
                         <input class="finput" type="text" id="uname2">
@@ -349,12 +349,12 @@
         onkeydown="if(event.keyCode == 13) {talk()}">
 
 
-        <form class="medForm" id="medForm">
-            <input class="input" type="text" placeholder="Enter Your name" id="">
-            <input class="input" type="Email" placeholder="Enter Your Email" id="">
-            <input class="input" type="tel" placeholder="Enter Your Contact No." id="">
-            <textarea class="input" name="" id="" placeholder="Share your concern With us" ></textarea>
-            <button> Submit</button>
+        <form name="chatbot1" class="medForm" id="medForm"  method="POST" data-netlify="true"  >
+            <input class="input" name="uname" type="text" placeholder="Enter Your name" id="name" required>
+            <input class="input" name="uemail" type="Email" placeholder="Enter Your Email" id="email" required>
+            <input class="input" name="utel" type="tel" placeholder="Enter Your Contact No." id="mobile" required>
+            <textarea class="input" name="umssg" id="req" placeholder="Share your concern With us" required ></textarea>
+            <button type="submit"> Submit</button>
 
 
         </form>

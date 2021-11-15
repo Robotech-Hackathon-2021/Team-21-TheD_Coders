@@ -47,6 +47,11 @@ main{
     /* border: 2px solid black; */
 
 }
+.requst{
+    height: 100px ;
+    width: 50px;
+    border: 2px solid black;
+}
 .formm form{
     /* border: 2px solid black; */
     display: flex;
@@ -120,11 +125,10 @@ main{
     display: none;
 }
 .icon{
-    background-image: url(../images/kartik.jpeg);
+    background-image: url(../images/anjali.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    transform: rotate(36deg);
     border-radius:50px;
     border: 1px solid;
     width: 80px;
